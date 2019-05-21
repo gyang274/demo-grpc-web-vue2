@@ -1,0 +1,15 @@
+{
+  "name": "echo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "echo_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yg <gyang274@github.com>",
+  "license": "ISC",
+  "dependencies": {
+    "google-protobuf": "^3.8.0-rc.1",
+    "grpc": "^1.20.3"
+  }
+}
