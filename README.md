@@ -28,16 +28,12 @@ node echo_client_dynamic.js
 ### ./proxy
 ```
 cd ./proxy
-```
 
-#### ubuntu
-```
+# ubuntu
 docker build -t yg-envoy-grpc -f Dockerfile .
-
 docker run --rm -it -p 9090:9090 -p 9901:9901 --network=host yg-envoy-grpc
-```
-#### mac/win
-```
+
+# mac/win
 emacs envoy.yaml
   # macos/windows 
   # envoy is running within docker
