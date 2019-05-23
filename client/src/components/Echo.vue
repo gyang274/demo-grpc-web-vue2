@@ -5,6 +5,7 @@
       <v-text-field
         prepend-icon="style" label="Query"
         v-model="msg"
+        @keyup.native.enter="getMsgs(msg)"
       ></v-text-field>
     </v-flex>
     <!-- main send button -->

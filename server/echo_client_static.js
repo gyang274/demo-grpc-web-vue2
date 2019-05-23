@@ -5,13 +5,13 @@ const services = require('./echo_grpc_pb')
 
 function doEchoService () {
   // connect directly to server
-  // let client = new services.EchoServiceClient(
-  //   '127.0.0.1:50051', grpc.credentials.createInsecure()
-  // )
-  // connect through envoy proxy 
   let client = new services.EchoServiceClient(
-    '127.0.0.1:9090', grpc.credentials.createInsecure()
+    '127.0.0.1:50051', grpc.credentials.createInsecure()
   )
+  // // connect through envoy proxy 
+  // let client = new services.EchoServiceClient(
+  //   '127.0.0.1:9090', grpc.credentials.createInsecure()
+  // )
 
   let req = new messages.EchoRequest()
   let msg = 'Hello World!'
